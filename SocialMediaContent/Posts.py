@@ -24,7 +24,7 @@ def clean_text(content, banned_words):
         content=content.replace(word.upper(),"***")
     return content
 def count_issues(content, banned_words):
-    words=content.lower().split()  # ["i", "am" very good at coding "badly" not equal to bad
+    words=content.lower().split()  
     count=0
     for w in words:
         if is_banned(w,banned_words):
